@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>隱藏輔中美食</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <!--導入Animate CDN-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <noscript>
+            <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+        </noscript>
+    <style>
+    #box {
+        width:100%;
+        height: 60px;
+        padding-top: 0em; 
+    }
+    #store_header {
+        font:0px;
+        width:100%;
+        height:100px;
+        margin:0 auto;
+        padding-right: 0em;
+        padding-left: 0em;
+        color: #fff;
+        text-align: center;
+        background-position: 0%;
+        background-attachment: fixed;
+        position: relative;
+    }
+/*nav*/
+    #store_nav{
+        width:100%;
+        margin:-24px auto;
+        overflow:hidden;
+        position: fixed;
+        top:0;
+        left:0;
+        padding-top: 0em;
+    }
+    #store_nav li{
+        float:left;
+    }
+    #store_nav ul li{
+        list-style-type:none;
+    }
+    #store_nav li a{
+        display: block;
+        width:200px;
+        height:42px;
+        line-height:50px;
+        background-color: #A23400;
+        font-size:18px;
+        color:#FFF;
+        letter-spacing:2px;
+        text-align:center;
+        text-decoration: none;
+    }
+    #store_nav li a:hover{
+        background-color: #993366;
+    }
+    #store_footer {
+        text-align: center;
+        margin-top: 4em;
+    }
+    #icons ul li{
+        display:inline;
+        text-align: center;
+    }
+.fb-grid:hover .fb-image, .fb-grid:focus .fb-image {
+     opacity: 0.6;
+}
+.ig-grid:hover .ig-image, .ig-grid:focus .ig-image {
+     opacity: 0.6;
+}
+.git-grid:hover .git-image, .git-grid:focus .git-image {
+     opacity: 0.6;
+}
+/* Container */
+    body {
+        /* min-width: (containers) */
+        min-width: 1200px;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        /* width: (containers) */
+        width: 1200px;
+    }
+/* Basic */
+    a {
+        color: #3ac984;
+        text-decoration: underline;
+    }
+    section.special, article.special {
+        text-align: center;
+    }
+/* Wrapper */
+    .store_wrapper {
+        background: #ececec;
+        padding: 6em 0;
+        text-align: center; 
+        display: inline;
+        position: fixed;
+    }
+    .store_intro{
+        background-color: white;
+        margin:0 auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        width:80%;
+        height:350px;
+        border-style:outset;
+        border-width:4px;
+    }
+    .store_introduce{
+        padding:2em;
+        display: inline;
+    }
+    .store_img{
+        padding:1.5em 1.5em 1.5em 0em;
+        float:left;
+        width:50%;
+    }
+    .store_intro_text {
+        float:right;
+        width:50%;
+        text-align: center;
+        padding:2em;
+        margin:auto;
+        font-size: 36px;　　　　　          /* 設定文字大小 */
+        line-height: 36px;　　　          　/* 設定文字行距 */
+        letter-spacing: 6px;　            　/* 設定文字間距 */
+    }
+    .store_intro_text p{
+        text-align: center;
+        padding:2em;
+        margin:auto;
+        font-size: 36px;　　　　　          /* 設定文字大小 */
+        line-height: 36px;　　　          　/* 設定文字行距 */
+        letter-spacing: 6px;　            　/* 設定文字間距 */
+    }
+    .store_intro_picture_left{
+        background-color: #FFFFAA;
+        margin:0 auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-top: 4em;
+        width:80%;
+        height:300px;
+        border-style:none;
+        border-width:4px;
+    }
+    .store_introduce_picture_left{
+        padding:2em;
+        display: inline;
+    }
+    .store_img_picture_left{
+        padding:1.5em 1.5em 1.5em 3em;
+        float:left;
+        width:40%;
+    }
+    .store_intro_text_picture_left{
+        float:right;
+        width:60%;
+        text-align: center;
+        padding:2em;
+        margin:auto;
+        font-size: 24px;　　　　　          /* 設定文字大小 */
+        line-height: 36px;　　　          　/* 設定文字行距 */
+        letter-spacing: 3px;　            　/* 設定文字間距 */
+        margin:0 auto;
+    }
+    .store_intro_picture_right{
+        background-color: #FFFFAA;
+        margin:0 auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-top: 4em;
+        width:80%;
+        height:300px;
+        border-style:none;
+        border-width:4px;
+    }
+    .store_introduce_picture_right{
+        padding:2em;
+        display: inline;
+    }
+    .store_img_picture_right{
+        padding:1.5em 0em 1.5em 1.5em;
+        float:right;
+        width:40%;
+    }
+    .store_intro_text_picture_right{
+        float:left;
+        width:60%;
+        text-align: center;
+        padding:4em;
+        margin:auto;
+        margin:0 auto;
+    }
+    .discuss_BOX{
+        margin-top: 100px;
+        margin-bottom: -30px;
+        margin-left: 50px;
+        width:95%;
+        height:650px;
+        background-color: #FFAF60;
+    }
+/*選單*/
+  ul.drop-down-menu ul { /*隱藏次選單*/
+        left: 0px;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+        opacity: 1;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        left: -1px;
+        border-right: 0px;
+    }
+    </style>
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    </head>
+    <body class="" bgcolor="#FFED97">
+        <div id = "store_header">
+            <nav id="store_nav" >
+                <div  style = "background-color: #A23400; width:100%; height:50px;">
+                    <ul class="drop-down-menu">
+                            <li>
+                                <a href="#" >目錄</a>
+                                    <ul>
+                                        <li><a href="/FJUMMY.github.io/2020/12/25/Intro">簡介</a></li><br>
+                                        <li><a href="/FJUMMY.github.io/2020/12/25/restaurant">餐廳介紹</a></li><br>
+                                        <li><a href="/FJUMMY.github.io/2020/12/25/attachus">聯絡我們</a></li>
+                                    </ul>
+                            </li>
+                            <li>
+                                <a href="/FJUMMY.github.io/">回首頁</a>
+                            </li>
+                            <form>
+                                <p align="right" style= "font-weight:bold ; font-size:x-large" >搜尋美食 :<input type="text" name="search" style="width: 250px; height:40px"></p>
+                            </form>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="store_wapper">
+            <div class="store_intro">
+                <section class="store_introduce">
+                    <div class="store_img"><img src="工寓咖啡.jpg" alt="" style="width:485px;height:300px"></div>
+                    <span id="store_intro_text"><p><font Face="DFKai-sb" size="6">工寓咖啡 café industry</font><br><font Face="Microsoft JhengHei" size="4">
+                        <br>位於輔大2號出口附近，藏在公寓二樓，清淨又舒適的環境讓它深受文青的喜愛<br><br>TEL：02 2908 2308<br>地址：242新北市新莊區中正路593號<br>營業時間：每天 12:00~21:00(其餘以店家公告為主)<br><br>FB：<a href="https://www.facebook.com/cafeindustryone/">工寓咖啡</a><br>(可以從這邊看到新品與營業資訊喔!)<br></font></p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_left">
+                <section class="store_introduce_picture_left">
+                    <div class="store_img_picture_left"><img src="工寓-1.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_left"><font Face="Microsoft JhengHei" size="4"><p>工寓咖啡是很舒適的一間咖啡館。<br><br>因為位於二樓，所以雖然是在熱鬧的輔大校區旁，卻可以俯瞰馬路上的一切事物，彷彿能暫時抽離這個紛亂的世界。<br><br>#提供插座  #不限時 #WIFI #免服務費 #續杯8折<br><br>可以帶著電腦來這邊點一杯咖啡，悠閒地度過一個下午。</font></p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_right">
+                <section class="store_introduce_picture_right">
+                    <div class="store_img_picture_right"><img src="工寓-2.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_right" style:><font Face="Microsoft JhengHei" size="4"><p>店內有許多工業風的裝潢與裝飾，讓整間咖啡廳充滿文青又舒適的氣氛<br><br>像是圖片中用水管搭建成的書架，別有創意且不失美觀，書架的書也可以拿起閱讀<br><br><br></font></p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_left">
+                <section class="store_introduce_picture_left">
+                    <div class="store_img_picture_left"><img src="工寓-3.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_left"><font Face="Microsoft JhengHei" size="4" align="center"><p>推薦飲品：錫蘭鮮奶茶 $120元/壺<br><br>鮮奶、紅茶、糖，奶茶三元素分別分開呈現，讓客人可依個人喜好分配每種味道的濃淡<br><br>PS：熱鮮奶茶，鮮奶會用熱蒸氣打過，上面會飄著濃密的奶泡，下面才是熱鮮奶，所以在倒出來記得用湯匙挖一下奶泡唷</font></p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_right">
+                <section class="store_introduce_picture_right">
+                    <div class="store_img_picture_right"><img src="工寓-4.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_right"><font Face="Microsoft JhengHei" size="4"><p>推薦飲品：風味拿鐵-榛果 $130元/杯<br><br>滿濃郁的黑咖啡配上許多人喜歡的牛奶組合<br>榛果偏甜，會把黑咖啡的味道蓋過些，不那麼喜歡咖啡味的人可以嘗試一下~<br><br>拉花非常細緻 ，不覺得喝掉很可惜嗎？</font></p></span>
+                </section>
+            </div>
+            <div style="padding-top: 2em"><p Align=center><font Face="Microsoft JhengHei" size="6">MENU</p></font></div>
+            <div><p Align=center><img src="工寓咖啡菜單.jpg" alt=""style="width:702px;height:960px"></p></div>
+            <div class="store_intro_picture_right">
+                <section class="store_introduce_picture_right">
+                    <div class="store_img_picture_right"><img src="工寓地圖.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_right"><font Face="Microsoft JhengHei" size="6" align="center"><p>工寓咖啡怎麼走~</font><font Face="Microsoft JhengHei" size="4" align="center"><br><br>>>位於輔大斜對面靴子義大利餐廳的"二樓"<br>要注意入口處不是在大馬路的地方，而是在後方小條的福營路上喔。<br>地址：242新北市新莊區中正路593號</font></p></span>
+                </section>
+            </div>
+        </div>     
+        <!--disqus-->
+        <div class = "discuss_BOX">
+            <div id="disqus_thread">留言板</div>
+            <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            var disqus_config = function () {
+                this.language = "zh_TW";
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://fjummy.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>   
+        <div>  
+            <footer id="store_footer">
+                <div id="icons">
+                <ul>
+                    <li class="fb-grid"><a href ="https://www.facebook.com/FJUMMY.FOOD/"><i class="fb-image fab fa-facebook fa-3x"></i></a><li>
+                    <li class="ig-grid"><a href="https://instagram.com/fjummy.food?igshid=12tczujo8og0f"><i class="ig-image fab fa-instagram fa-3x"></i></a><li>
+                    <li class="git-grid"><a href="https://github.com/giftedscholar/FJUMMY.github.io"><i class="git-image fab fa-github fa-3x"></i></a><li>
+                </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>隱藏輔中美食</title>
+        <link sizes="40000x40000" href="1.PNG" rel="icon">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <!--導入Animate CDN-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <noscript>
+            <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+        </noscript>
+    <style>
+    #box {
+        width:100%;
+        height: 60px;
+        padding-top: 0em; 
+    }
+    #store_header {
+        font:0px;
+        width:100%;
+        height:100px;
+        margin:0 auto;
+        padding-right: 0em;
+        padding-left: 0em;
+        color: #fff;
+        text-align: center;
+        background-position: 0%;
+        background-attachment: fixed;
+        position: relative;
+    }
+/*nav*/
+    #store_nav{
+        width:100%;
+        margin:-24px auto;
+        overflow:hidden;
+        position: fixed;
+        top:0;
+        left:0;
+        padding-top: 0em;
+    }
+    #store_nav li{
+        float:left;
+    }
+    #store_nav ul li{
+        list-style-type:none;
+    }
+    #store_nav li a{
+        display: block;
+        width:200px;
+        height:42px;
+        line-height:50px;
+        background-color: #A23400;
+        font-size:18px;
+        color:#FFF;
+        letter-spacing:2px;
+        text-align:center;
+        text-decoration: none;
+    }
+    #store_nav li a:hover{
+        background-color: #993366;
+    }
+    #store_footer {
+        text-align: center;
+        margin-top: 4em;
+    }
+    #icons ul li{
+        display:inline;
+        text-align: center;
+    }
+.fb-grid:hover .fb-image, .fb-grid:focus .fb-image {
+     opacity: 0.6;
+}
+.ig-grid:hover .ig-image, .ig-grid:focus .ig-image {
+     opacity: 0.6;
+}
+.git-grid:hover .git-image, .git-grid:focus .git-image {
+     opacity: 0.6;
+}
+/* Container */
+    body {
+        /* min-width: (containers) */
+        min-width: 1200px;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        /* width: (containers) */
+        width: 1200px;
+    }
+/* Basic */
+    a {
+        color: #3ac984;
+        text-decoration: underline;
+    }
+    section.special, article.special {
+        text-align: center;
+    }
+/* Wrapper */
+    .store_wrapper {
+        background: #ececec;
+        padding: 6em 0;
+        text-align: center; 
+        display: inline;
+        position: fixed;
+    }
+    .store_intro{
+        background-color: white;
+        margin:0 auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        width:80%;
+        height:350px;
+        border-style:outset;
+        border-width:4px;
+    }
+    .store_introduce{
+        padding:2em;
+        display: inline;
+    }
+    .store_img{
+        padding:1.5em 1.5em 1.5em 0em;
+        float:left;
+        width:50%;
+    }
+    .store_intro_text {
+        float:right;
+        width:50%;
+        text-align: center;
+        padding:2em;
+        margin:auto;
+        font-size: 36px;　　　　　          /* 設定文字大小 */
+        line-height: 36px;　　　          　/* 設定文字行距 */
+        letter-spacing: 6px;　            　/* 設定文字間距 */
+    }
+    .store_intro_text p{
+        text-align: center;
+        padding:2em;
+        margin:auto;
+        font-size: 36px;　　　　　          /* 設定文字大小 */
+        line-height: 36px;　　　          　/* 設定文字行距 */
+        letter-spacing: 6px;　            　/* 設定文字間距 */
+    }
+    .store_intro_picture_left{
+        background-color: #FFFFAA;
+        margin:0 auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-top: 4em;
+        width:80%;
+        height:300px;
+        border-style:none;
+        border-width:4px;
+    }
+    .store_introduce_picture_left{
+        padding:2em;
+        display: inline;
+    }
+    .store_img_picture_left{
+        padding:1.5em 1.5em 1.5em 3em;
+        float:left;
+        width:40%;
+    }
+    .store_intro_text_picture_left{
+        float:right;
+        width:60%;
+        text-align: center;
+        padding:2em;
+        margin:auto;
+        font-size: 24px;　　　　　          /* 設定文字大小 */
+        line-height: 36px;　　　          　/* 設定文字行距 */
+        letter-spacing: 3px;　            　/* 設定文字間距 */
+        margin:0 auto;
+    }
+    .store_intro_picture_right{
+        background-color: #FFFFAA;
+        margin:0 auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-top: 4em;
+        width:80%;
+        height:300px;
+        border-style:none;
+        border-width:4px;
+    }
+    .store_introduce_picture_right{
+        padding:2em;
+        display: inline;
+    }
+    .store_img_picture_right{
+        padding:1.5em 0em 1.5em 1.5em;
+        float:right;
+        width:40%;
+    }
+    .store_intro_text_picture_right{
+        float:left;
+        width:60%;
+        text-align: center;
+        padding:4em;
+        margin:auto;
+        margin:0 auto;
+    }
+    .discuss_BOX{
+        margin-top: 100px;
+        margin-bottom: -30px;
+        margin-left: 50px;
+        width:95%;
+        height:650px;
+        background-color: #FFAF60;
+    }
+/*選單*/
+  ul.drop-down-menu ul { /*隱藏次選單*/
+        left: 0px;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+        opacity: 1;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        left: -1px;
+        border-right: 0px;
+    }
+    </style>
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    </head>
+    <body class="" bgcolor="#FFED97">
+        <div id = "store_header">
+            <nav id="store_nav" >
+                <div  style = "background-color: #A23400; width:100%; height:50px;">
+                    <ul class="drop-down-menu">
+                        <li>
+                            <a href="#" >目錄</a>
+                                <ul>
+                                    <li><a href="/FJUMMY.github.io/2020/12/25/Intro">簡介</a></li><br>
+                                    <li><a href="/FJUMMY.github.io/2020/12/25/restaurant">餐廳介紹</a></li><br>
+                                    <li><a href="/FJUMMY.github.io/2020/12/25/attachus">聯絡我們</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="/FJUMMY.github.io/">回首頁</a>
+                        </li>
+                        <form>
+                            <p align="right" style= "font-weight:bold ; font-size:x-large" >搜尋美食 :<input type="text" name="search" style="width: 250px; height:40px"></p>
+                        </form>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="store_wapper">
+            <div class="store_intro">
+                <section class="store_introduce">
+                    <div class="store_img"><img src="icecream.jpg" alt="" style="width:485px;height:300px"></div>
+                    <span id="store_intro_text"><p><font Face="DFKai-sb" size="6">輔大食科冰淇淋</font><br><br><font Face="Microsoft JhengHei" size="4">藏身在輔大角落的校園美食<br>香甜可口x無敵美味x無法言喻<br>連甜筒口感也與眾不同<br>輔大最不能錯過的美食<br>>>只在輔大食科實習門市部<br><br>TEL:02 2905 2514<br>地址：新北市中正路510號輔仁大學食品科學系工廠<br>營業時間: 非寒暑假期間 週一至週五 12:00~17:00(依官網公告為主)</font></p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_left">
+                <section class="store_introduce_picture_left">
+                    <div class="store_img_picture_left"><img src="icecream-1.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_left"><font Face="Microsoft JhengHei" size="4"><p>炎炎夏日來支冰涼的冰淇淋，是不是能讓人感到透心涼呢？<br>在輔仁大學校園裡，有一家由食品科學系三年級學生們經營的實習門市<br>以木頭打造的店門口，搭配店內鵝黃色調的裝潢，整體給人溫馨又可愛的舒適感<br>是來輔大千萬不能錯過的美食之一喔<br></font></p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_right">
+                <section class="store_introduce_picture_right">
+                    <div class="store_img_picture_right"><img src="icecream-2.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_right" style:><font Face="Microsoft JhengHei" size="4"><p>點餐方法：<br>1.先看好黑板上的口味 <br>2.跟櫃台說想要的口味並結帳 <br>3.在左側的製冰機前等待就可以囉<br><br>口味有三種:香草、巧克力、綜合<br><br>售價:30元/支 </p></font></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_left">
+                <section class="store_introduce_picture_left">
+                    <div class="store_img_picture_left"><img src="icecream-3.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_left"><font Face="Microsoft JhengHei" size="4" align="center"><p>炎炎夏日就是要來一支食科冰~<br>大推綜合口味，香草加上巧克力簡直是甜而不膩的神仙組合啊<br><br>Tips：吃完是不是總是意猶未盡呢<br>>>跟門市購買冰卷10張<br><br>售價：270元/10張<br><br>就有吃不完還更便宜的冰淇淋啦~</font></p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_right">
+                <section class="store_introduce_picture_right">
+                    <div class="store_img_picture_right"><img src="icecream-4.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_right"><font Face="Microsoft JhengHei" size="4"><p>食科冰在特殊時節，像是校慶、萬聖節、聖誕節還會出特殊口味喔~<br>通常錯過不再，每一次都充滿特色又好吃，得好好把握！<br><br>特殊冰購買攻略：只要在指定時間購買冰卷<br>在限定口味販賣時間前去門市兌換就吃得到啦~<br><br>圖片就是聖誕節特殊口味：焙茶薑餅/焦糖櫻桃</font></p></span>
+                </section>
+            </div>
+            <div style="padding-top: 2em"><p Align=center><font Face="DFKai-sb" size="6">特別篇：那些年我們一起吃過的特殊口味</p></font></div>
+            <div><p Align=center margin:2em auto;><img src="食科特殊冰.jpg" alt="" style="width:1000px;height:250px;border:4px #FFAD86 solid;padding:20px;"></p></div>
+            <div class="store_intro_picture_right">
+                <section class="store_introduce_picture_right">
+                    <div class="store_img_picture_right"><img src="食科怎麼走.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_right"><font Face="Microsoft JhengHei" size="6" align="center"><p>食科冰怎麼走~</font><font Face="Microsoft JhengHei" size="4" align="center"><br><br>從輔大站1號出口進入大門直走，看見右側的食品科學系的巷子裡<br>就可以找到全輔大人夏日必吃的食科冰淇淋摟!!<br><br>地址：新北市中正路510號輔仁大學食品科學系工廠</font></p></span>
+                </section>
+            </div>
+        </div>            
+        <!--disqus-->
+        <div class = "discuss_BOX">
+            <div id="disqus_thread">留言板</div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                var disqus_config = function () {
+                    this.language = "zh_TW";
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://fjummy.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+        <div>
+            <footer id="store_footer">
+                <div id="icons">
+                <ul>
+                    <li class="fb-grid"><a href ="https://www.facebook.com/FJUMMY.FOOD/"><i class="fb-image fab fa-facebook fa-3x"></i></a><li>
+                    <li class="ig-grid"><a href="https://instagram.com/fjummy.food?igshid=12tczujo8og0f"><i class="ig-image fab fa-instagram fa-3x"></i></a><li>
+                    <li class="git-grid"><a href="https://github.com/giftedscholar/FJUMMY.github.io"><i class="git-image fab fa-github fa-3x"></i></a><li>
+                </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
