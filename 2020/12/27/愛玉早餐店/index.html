@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>隱藏輔中美食</title>
+    <link sizes="40000x40000" href="1.PNG" rel="icon">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <!--導入Animate CDN-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <noscript>
+        <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </noscript>
+    <style>
+        #box {
+            width: 100%;
+            height: 60px;
+            padding-top: 0em;
+        }
+        #store_header {
+            font: 0px;
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+            padding-right: 0em;
+            padding-left: 0em;
+            color: #fff;
+            text-align: center;
+            background-position: 0%;
+            background-attachment: fixed;
+            position: relative;
+        }
+        /*nav*/
+        #store_nav {
+            width:100%;
+            margin:-24px auto;
+            overflow:hidden;
+            position: fixed;
+            top:0;
+            left: 0;
+            padding-top: 0em;
+        }
+        #store_nav li {
+            float: left;
+        }
+        #store_nav ul li {
+            list-style-type: none;
+        }
+        #store_nav li a {
+            display: block;
+            width: 200px;
+            height: 42px;
+            line-height: 50px;
+            background-color: #A23400;
+            font-size: 18px;
+            color: #FFF;
+            letter-spacing: 2px;
+            text-align: center;
+            text-decoration: none;
+        }
+        #store_nav li a:hover {
+            background-color: #993366;
+        }
+        #store_footer {
+            text-align: center;
+            margin-top: 4em;
+        }
+        #icons ul li {
+            display: inline;
+            text-align: center;
+        }
+        .fb-grid:hover .fb-image, .fb-grid:focus .fb-image {
+            opacity: 0.6;
+        }
+        .ig-grid:hover .ig-image, .ig-grid:focus .ig-image {
+            opacity: 0.6;
+        }
+        .git-grid:hover .git-image, .git-grid:focus .git-image {
+            opacity: 0.6;
+        }
+        /* Container */
+        body {
+            /* min-width: (containers) */
+            min-width: 1200px;
+        }
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            /* width: (containers) */
+            width: 1200px;
+        }
+        /* Basic */
+        a {
+            color: #3ac984;
+            text-decoration: underline;
+        }
+        section.special, article.special {
+            text-align: center;
+        }
+        /* Wrapper */
+        .store_wrapper {
+            background: #ececec;
+            padding: 6em 0;
+            text-align: center;
+            display: inline;
+        }
+        .store_intro {
+            background-color: white;
+            margin: 0 auto;
+            padding-left: 3em;
+            padding-right: 3em;
+            width: 80%;
+            height: 350px;
+            border-style: outset;
+            border-width: 4px;
+        }
+        .store_introduce {
+            padding: 2em;
+            display: inline;
+        }
+        .store_img {
+            padding: 1.5em 1.5em 1.5em 0em;
+            float: left;
+            width: 50%;
+        }
+        .store_intro_text {
+            float: right;
+            width: 50%;
+            text-align: center;
+            padding: 2em;
+            margin: auto;
+            font-size: 24px;
+            /* 設定文字大小 */
+            line-height: 36px;
+            /* 設定文字行距 */
+            letter-spacing: 3px;
+            /* 設定文字間距 */
+        }
+        .store_intro_picture_left {
+            background-color: #FFFFAA;
+            margin: 0 auto;
+            padding-left: 3em;
+            padding-right: 3em;
+            margin-top: 4em;
+            width: 80%;
+            height: 300px;
+            border-style: none;
+            border-width: 4px;
+        }
+        .store_introduce_picture_left {
+            padding: 2em;
+            display: inline;
+        }
+        .store_img_picture_left {
+            padding: 1.5em 1.5em 1.5em 3em;
+            float: left;
+            width: 40%;
+        }
+        .store_intro_text_picture_left {
+            float: right;
+            width: 60%;
+            text-align: center;
+            padding: 2em;
+            margin: auto;
+            font-size: 24px;
+            /* 設定文字大小 */
+            line-height: 36px;
+            /* 設定文字行距 */
+            letter-spacing: 3px;
+            /* 設定文字間距 */
+        }
+        .store_intro_picture_right {
+            background-color: #FFFFAA;
+            margin: 0 auto;
+            padding-left: 3em;
+            padding-right: 3em;
+            margin-top: 4em;
+            width: 80%;
+            height: 300px;
+            border-style: none;
+            border-width: 4px;
+        }
+        .store_introduce_picture_right {
+            padding: 2em;
+            display: inline;
+        }
+        .store_img_picture_right {
+            padding: 1.5em 0em 1.5em 1.5em;
+            float: right;
+            width: 40%;
+        }
+        .store_intro_text_picture_right {
+            float: left;
+            width: 60%;
+            text-align: center;
+            padding: 4em;
+            margin: auto;
+            font-size: 24px;
+            /* 設定文字大小 */
+            line-height: 36px;
+            /* 設定文字行距 */
+            letter-spacing: 3px;
+            /* 設定文字間距 */
+        }
+        /*選單*/
+        ul.drop-down-menu ul { /*隱藏次選單*/
+            left: 0px;
+            opacity: 0;
+            -webkit-transition: opacity 0.3s;
+            transition: opacity 0.3s;
+        }
+        ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+            opacity: 1;
+            -webkit-transition: opacity 0.3s;
+            transition: opacity 0.3s;
+            left: -1px;
+            border-right: 0px;
+        }
+    </style>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+<body class="" bgcolor="#FFED97">
+    <div id="store_header">
+        <nav id="store_nav">
+            <div  style = "background-color: #A23400; width:100%; height:50px;">
+                <ul class="drop-down-menu">
+                        <li>
+                            <a href="#" >目錄</a>
+                                <ul>
+                                    <li><a href="/FJUMMY.github.io/2020/12/25/Intro">簡介</a></li><br>
+                                    <li><a href="/FJUMMY.github.io/2020/12/25/restaurant">餐廳介紹</a></li><br>
+                                    <li><a href="/FJUMMY.github.io/2020/12/25/attachus">聯絡我們</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="/FJUMMY.github.io/">回首頁</a>
+                        </li>
+                        <form>
+                            <p align="right" style= "font-weight:bold ; font-size:x-large" >搜尋美食 :<input type="text" name="search" style="width: 250px; height:40px"></p>
+                        </form>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="store_wapper">
+        <div class="store_intro">
+            <section class="store_introduce">
+                <div class="store_img"><img src="2.jpg" alt="" style="width:485px;height:300px"></div>
+                <span id="store_intro_text">
+                    <p>
+                        <font Face="DFKai-sb" size="5">愛玉早餐店</font><br>地址 : 新北市新莊區中正路514巷53弄34號<br>TEL : 02 2908 5218<br>營業時間 : 05:30-13:30 (週日公休)<br>MRT : 輔大站 1 號出口<br><br>聽說是學長姐們畢業後數一數二懷念的輔大美食<br>有開到13點當午餐吃也不賴
+                        <br><br>小評價<br>口味：份量大 👍🏻<br>環境：根本能直接當咖啡廳坐<br>服務：阿姨親切可愛<br>CP值：UP!!!
+                    </p>
+                </span>
+            </section>
+        </div>
+        <div class="store_intro_picture_left">
+            <section class="store_introduce_picture_left">
+                <div class="store_img_picture_left"><img src="3.png" alt="" style="width:405px;height:250px"></div>
+                <span id="store_intro_text_picture_left">
+                    <p>
+                        <font Face="DFKai-sb" size="5">🍝 韓式酢醬鐵板麵  $55</font><br><br>小評價<br>有付顆蛋可以跟阿姨說熟度(我們的七分熟)
+                        <br>酢醬酸酸的、麵軟軟的，就像累了一天的我呀!
+                    </p>
+                </span>
+            </section>
+        </div>
+        <div class="store_intro_picture_right">
+            <section class="store_introduce_picture_right">
+                <div class="store_img_picture_right"><img src="4.png" alt="" style="width:405px;height:250px"></div>
+                <span id="store_intro_text_picture_right">
+                    <p>
+                        <font Face="DFKai-sb" size="5">🥚 總匯手工蛋餅  $75</font>
+                        <br><br>小評價<br>對在意蛋餅份量的我給高分!!好吃!<br>餅皮有嚼勁，美中不足的是稍為乾了一點，所以脆皮派或粉漿派可能不會被滿足哦!但他們家的醬油膏是目前我吃過好吃的，本身不愛加醬油的我，都被他們家的醬油膏所散發出濃醇所吸引，搭配上鹹香的手工餅皮，美味簡直無法形容 ~
+                    </p>
+                </span>
+            </section>
+        </div>
+        <div class="store_intro_picture_left">
+            <section class="store_introduce_picture_left">
+                <div class="store_img_picture_left"><img src="5.jpg" alt="" style="width:405px;height:250px"></div>
+                <span id="store_intro_text_picture_left">
+                    <p>
+                        <font Face="DFKai-sb" size="5">手工豆漿(中)  $15</font>
+                        <br><br>小評價<br>這家的豆漿是手工製作的，喝得出自然的豆香 但我個人覺得味道偏淡，<br>有點可惜呀!
+                    </p>
+                </span>
+            </section>
+        </div>
+        <p><center><font color="#6005" size="5"><b>Menu</b></font></center></p>
+        <div class="meau"><p Align=center><img src="6.jpg" alt="" style="width:632px;height:449px"></p></div></div>
+        <div class="store_intro_picture_left">
+            <section class="store_introduce_picture_left">
+                <div class="store_img_picture_left"><img src="7.jpg" alt="" style="width:250px;height:250px"></div>
+                <span id="store_intro_text_picture_left"><p>Place<br><br>新北市新莊區中正路514巷53弄34號<br><br>MRT<br><br>輔大站 1 號出口<br><br><a href="https://www.instagram.com/aiyubreakfastshop/"><b>Instagram</b></a><br><br><a href="https://m.facebook.com/%E6%84%9B%E7%8E%89%E6%97%A9%E9%A4%90%E5%BA%97-166148366787241/"><b>Facebook</b></a></p></span>
+            </section>
+        </div>
+    </div>
+    <footer id="store_footer">
+        <div id="icons">
+            <ul>
+                <li class="fb-grid"><a href="https://www.facebook.com/FJUMMY.FOOD/"><i class="fb-image fab fa-facebook fa-3x"></i></a>
+                <li>
+                <li class="ig-grid"><a href="https://instagram.com/fjummy.food?igshid=12tczujo8og0f"><i class="ig-image fab fa-instagram fa-3x"></i></a>
+                <li>
+                <li class="git-grid"><a href="https://github.com/giftedscholar"><i class="git-image fab fa-github fa-3x"></i></a>
+                <li>
+            </ul>
+        </div>
+    </footer>
+    <script type='text/javascript' src='https://a-oss.zmki.cn/20190502/aixintexiao.js'></script>
+</body>
+</html>
