@@ -207,6 +207,14 @@
             letter-spacing: 3px;
             /* 設定文字間距 */
         }
+        .discuss_BOX{
+            margin-top: 100px;
+            margin-bottom: -30px;
+            margin-left: 50px;
+            width:95%;
+            height:650px;
+            background-color: #FFAF60;
+        }
         /*選單*/
         ul.drop-down-menu ul { /*隱藏次選單*/
             left: 0px;
@@ -301,6 +309,32 @@
             </section>
         </div>
     </div>
+    <!--disqus-->
+        <div class = "discuss_BOX">
+            <div id="disqus_thread">留言板</div>
+            <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            var disqus_config = function () {
+                this.language = "zh_TW";
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://fjummy.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+    <div>
     <footer id="store_footer">
         <div id="icons">
             <ul>
@@ -314,5 +348,6 @@
         </div>
     </footer>
     <script type='text/javascript' src='https://a-oss.zmki.cn/20190502/aixintexiao.js'></script>
+    </div>
 </body>
 </html>
