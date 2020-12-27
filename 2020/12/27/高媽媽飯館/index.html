@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>隱藏輔中美食</title>
+        <link sizes="40000x40000" href="1.PNG" rel="icon">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <!--導入Animate CDN-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <noscript>
+            <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+        </noscript>
+    <style>
+    #box {
+        width:100%;
+        height: 60px;
+        padding-top: 0em; 
+    }
+    #store_header {
+        font:0px;
+        width:100%;
+        height:100px;
+        margin:0 auto;
+        padding-right: 0em;
+        padding-left: 0em;
+        color: #fff;
+        text-align: center;
+        background-position: 0%;
+        background-attachment: fixed;
+        position: relative;
+    }
+/*nav*/
+    #store_nav{
+        width:100%;
+        margin:-24px auto;
+        overflow:hidden;
+        position: fixed;
+        top:0;
+        left: 0;
+        padding-top: 0em;
+    }
+    #store_nav li{
+        float:left;
+    }
+    #store_nav ul li{
+        list-style-type:none;
+    }
+    #store_nav li a{
+        display: block;
+        width:200px;
+        height:42px;
+        line-height:50px;
+        background-color: #A23400;
+        font-size:18px;
+        color:#FFF;
+        letter-spacing:2px;
+        text-align:center;
+        text-decoration: none;
+    }
+    #store_nav li a:hover{
+        background-color: #993366;
+    }
+    #store_footer {
+        text-align: center;
+        margin-top: 4em;
+    }
+    #icons ul li{
+        display:inline;
+        text-align: center;
+    }
+.fb-grid:hover .fb-image, .fb-grid:focus .fb-image {
+     opacity: 0.6;
+}
+.ig-grid:hover .ig-image, .ig-grid:focus .ig-image {
+     opacity: 0.6;
+}
+.git-grid:hover .git-image, .git-grid:focus .git-image {
+     opacity: 0.6;
+}
+/* Container */
+    body {
+        /* min-width: (containers) */
+        min-width: 1200px;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        /* width: (containers) */
+        width: 1200px;
+    }
+/* Basic */
+    a {
+        color: #3ac984;
+        text-decoration: underline;
+    }
+    section.special, article.special {
+        text-align: center;
+    }
+/* Wrapper */
+    .store_wrapper {
+        background: #ececec;
+        padding: 6em 0;
+        text-align: center; 
+        display: inline;
+    }
+    .store_intro{
+        background-color: white;
+        margin:0 auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        width:80%;
+        height:350px;
+        border-style:outset;
+        border-width:4px;
+    }
+    .store_introduce{
+        padding:2em;
+        display: inline;
+    }
+    .store_img{
+        padding:1.5em 1.5em 1.5em 0em;
+        float:left;
+        width:50%;
+    }
+    .store_intro_text {
+        float:right;
+        width:50%;
+        text-align: center;
+        padding:2em;
+        margin:auto;
+        font-size: 24px;　　　　　          /* 設定文字大小 */
+        line-height: 36px;　　　          　/* 設定文字行距 */
+        letter-spacing: 3px;　            　/* 設定文字間距 */
+    }
+    .store_intro_picture_left{
+        background-color: #FFFFAA;
+        margin:0 auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-top: 4em;
+        width:80%;
+        height:300px;
+        border-style:none;
+        border-width:4px;
+    }
+    .store_introduce_picture_left{
+        padding:2em;
+        display: inline;
+    }
+    .store_img_picture_left{
+        padding:1.5em 1.5em 1.5em 3em;
+        float:left;
+        width:40%;
+    }
+    .store_intro_text_picture_left{
+        float:right;
+        width:60%;
+        text-align: center;
+        padding:2em;
+        margin:auto;
+        font-size: 24px;　　　　　          /* 設定文字大小 */
+        line-height: 36px;　　　          　/* 設定文字行距 */
+        letter-spacing: 3px;　            　/* 設定文字間距 */
+    }
+    .store_intro_picture_right{
+        background-color: #FFFFAA;
+        margin:0 auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-top: 4em;
+        width:80%;
+        height:300px;
+        border-style:none;
+        border-width:4px;
+    }
+    .store_introduce_picture_right{
+        padding:2em;
+        display: inline;
+    }
+    .store_img_picture_right{
+        padding:1.5em 0em 1.5em 1.5em;
+        float:right;
+        width:40%;
+    }
+    .store_intro_text_picture_right{
+        float:left;
+        width:60%;
+        text-align: center;
+        padding:4em;
+        margin:auto;
+        font-size: 24px;　　　　　          /* 設定文字大小 */
+        line-height: 36px;　　　          　/* 設定文字行距 */
+        letter-spacing: 3px;　            　/* 設定文字間距 */
+    }
+    .discuss_BOX{
+        margin-top: 100px;
+        margin-bottom: -30px;
+        margin-left: 50px;
+        width:95%;
+        height:650px;
+        background-color: #FFAF60;
+    }
+/*選單*/
+  ul.drop-down-menu ul { /*隱藏次選單*/
+        left: 0px;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+        opacity: 1;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        left: -1px;
+        border-right: 0px;
+    }
+    </style>
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    </head>
+    <body class="" bgcolor="#FFED97">
+        <div id = "store_header">
+            <nav id="store_nav" >
+                <div  style = "background-color: #A23400; width:100%; height:50px;">
+                    <ul class="drop-down-menu">
+                        <li>
+                            <a href="#" >目錄</a>
+                                <ul>
+                                    <li><a href="/FJUMMY.github.io/2020/12/25/Intro">簡介</a></li><br>
+                                    <li><a href="/FJUMMY.github.io/2020/12/25/restaurant">餐廳介紹</a></li><br>
+                                    <li><a href="/FJUMMY.github.io/2020/12/25/attachus">聯絡我們</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="/FJUMMY.github.io/">回首頁</a>
+                        </li>
+                        <form>
+                            <p align="right" style= "font-weight:bold ; font-size:x-large" >搜尋美食 :<input type="text" name="search" style="width: 250px; height:40px"></p>
+                        </form>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="store_wapper">
+            <div class="store_intro">
+                <section class="store_introduce">
+                    <div class="store_img"><img src="高媽媽飯館01.jpg" alt="" style="width:485px;height:300px"></div>
+                    <span id="store_intro_text"><p><font face="DFKai-sb" size="6"><b>高媽媽飯館</b></font><br><br><font face="DFKai-sb">&emsp;&emsp;輔大周邊便宜又好吃的代表之一，高媽媽飯館讓超多輔大人畢業後念念不忘。不僅是因為東西好吃又便宜，高媽媽的親切跟媽媽感也是很多輔大人心中的小小撫慰。</font><br><br>營業時間: 11:10-14:00，14:10-20:00</p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_left">
+                <section class="store_introduce_picture_left">
+                    <div class="store_img_picture_left"><img src="高媽媽飯館02.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_left"><p><font face="DFKai-sb" size="6"><b>菜單</b></font><br><br><font face="DFKai-sb">&emsp;&emsp;從鮭魚、鱈魚飯，到雞腿、獅子頭、雞排飯等，讓男生輕鬆吃飽的份量加上每天不同的豐富配菜，內用還可以免費加飯喝紅茶。雖然近來高媽媽的價格有些微的調漲，但大部分的餐點仍維持在70元左右，價格還是很親民。這些年，高媽媽的親切感與媽媽味，不但成為眾多輔大人的心靈慰藉，許多校友們也依然對高媽媽的滋味念念不忘！</font></p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_right">
+                <section class="store_introduce_picture_right">
+                    <div class="store_img_picture_right"><img src="高媽媽飯館04.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_right"><p><font face="DFKai-sb" size="6"><b>鱈魚飯</b></font><br><br><font face="DFKai-sb">&emsp;&emsp;便當真的料多又實在，而且重點是不會讓人覺得吃的很膩，菜色大約每日有10-15樣菜色可以挑，菜都給得很大方，無論是炒的、煮的或蒸的每樣都讓人看了垂涎三尺！鱈魚皮炸得很薄，灑了些許胡椒，且給的份量也不少，就連白飯也是給得很多！</font></p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_left">
+                <section class="store_introduce_picture_left">
+                    <div class="store_img_picture_left"><img src="高媽媽飯館05.jpg" alt="" style="width:405px;height:250px"></div>
+                    <span id="store_intro_text_picture_left"><p><font face="DFKai-sb" size="6"><b>紅糟肉</b></font><br><br><font face="DFKai-sb">&emsp;&emsp;醃得夠味炸得香，再挑兩三樣青菜、荷包蛋，銅板價又營養均衡的一餐就解決了，內用白飯、飲料、湯都可以無限續，還能多淋滷汁。</font></p></span>
+                </section>
+            </div>
+            <div class="store_intro_picture_right">
+                <section class="store_introduce_picture_right">
+                    <div class="store_img_picture_right"><img src="高媽媽飯館03.jpg" alt="" style="width:250px;height:260px"></div>
+                    <span id="store_intro_text_picture_right"><p><font face="DFKai-sb" size="6"><b>地圖</b></font><br><br>TEL:02-22093824<br>地址:新北市新莊區中正路514巷33弄5號</p></span>
+                </section>
+            </div>
+        </div>            
+        <!--disqus-->
+        <div class = "discuss_BOX">
+            <div id="disqus_thread">留言板</div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                var disqus_config = function () {
+                    this.language = "zh_TW";
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://fjummy.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+        <div>
+            <footer id="store_footer">
+                <div id="icons">
+                <ul>
+                    <li class="fb-grid"><a href ="https://www.facebook.com/FJUMMY.FOOD/"><i class="fb-image fab fa-facebook fa-3x"></i></a><li>
+                    <li class="ig-grid"><a href="https://instagram.com/fjummy.food?igshid=12tczujo8og0f"><i class="ig-image fab fa-instagram fa-3x"></i></a><li>
+                    <li class="git-grid"><a href="https://github.com/WinnieKuo-1025"><i class="git-image fab fa-github fa-3x"></i></a><li>
+                </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
